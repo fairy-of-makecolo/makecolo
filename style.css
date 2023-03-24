@@ -1,8 +1,12 @@
 @charset "utf-8";
 
+.body {
+  text-align: center
+}
+
 .title {
   /* フォントサイズなど任意指定 */
-  font: bold clamp(1rem, 5vmin, 10rem) / 1 Verdana, Helvetica, Arial, sans-serif;
+  font: bold clamp(1rem, 10vmin, 10rem) / 1 Verdana, Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   /* 背景グラデーションを指定・幅を 200% にしておく */
   background: linear-gradient(to right, #f00 0%, #f80 14.28%, #dd0 28.56%, #0d0 42.85%, #0dd 57.14%, #00f 71.42%, #e0e 85.71%, #f00 100%) 0% center / 200% auto;
