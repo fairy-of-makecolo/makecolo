@@ -13,7 +13,7 @@
           text-fill-color: transparent;
   -webkit-text-fill-color: transparent;
   /* アニメーション指定 */
-  animation: example 4s linear infinite;
+  animation: title 4s linear infinite;
 }
 
 /* 背景の横位置をズラす */
