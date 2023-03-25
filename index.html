@@ -10,6 +10,12 @@
 
     gtag('config', 'G-M8KVK625PZ');
   </script>
+  <script src="data.json" type="application/json" id="json-data"></script>
+  <script type="text/javascript">
+    document.addEventListener("DOMContentLoaded", function () {
+      document.getElementById('test').textContent = document.getElementById("json-data").textContent
+    });
+  </script>
   <meta charset="UTF-8">
   <title>ここは負けコロ</title>
   <link rel="stylesheet" href="style.css" type="text/css">
@@ -17,5 +23,6 @@
  <body>
    <h1><span class="title">ここは負けコロ</span></h1>
    <img src="geocities.jpg.webp">
+   <div id="test"></div>
  </body>
 </html>
