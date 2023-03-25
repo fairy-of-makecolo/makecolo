@@ -10,10 +10,10 @@
 
     gtag('config', 'G-M8KVK625PZ');
   </script>
-  <script src="data.json" type="application/json" id="json-data"></script>
+  <script src="data.js"></script>
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById('test').textContent = document.getElementById("json-data").textContent
+      document.getElementById('test').textContent = JSON_DATA["text"]
     });
   </script>
   <meta charset="UTF-8">
