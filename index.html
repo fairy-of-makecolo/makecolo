@@ -10,18 +10,18 @@
 
     gtag('config', 'G-M8KVK625PZ');
   </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>  
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function () {
-      const url = "https://script.google.com/macros/s/AKfycbzJRfhsVBb7sJK5swCUAjOcvmqLrl11V94bKqnFo_YLpwTXqT3Jo5dcYYgObidb9WxcHA/exec"
-
-      let request = new XMLHttpRequest();
-      request.open('GET', URL, true); 
-      request.responseType = 'json';
-      request.onload = function () {
-        var data = this.response;
-        console.log(data);
-      }
-      request.send();
+      const endpoint = "https://script.google.com/macros/s/AKfycby3wAMidI8ckv3HrbUG6WKpuibdFATFQAIU0vSojZ5nJ1_tGDLDT7D3FpAZfwQ-nTyrjQ/exec"
+      
+      $.ajax({
+          type: 'GET',
+          url: endpoint,
+          success: out => {
+            console.log(out);
+          }
+      });
     });
   </script>
   <meta charset="UTF-8">
