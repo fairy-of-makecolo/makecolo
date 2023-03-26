@@ -16,9 +16,10 @@
 
       let request = new XMLHttpRequest();
       request.open('GET', URL, true); 
+      request.responseType = 'json';
       request.onload = function () {
         var data = this.response;
-        document.getElementById('test').textContent = data
+        console.log(data);
       }
       request.send();
     });
