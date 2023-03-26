@@ -10,10 +10,17 @@
 
     gtag('config', 'G-M8KVK625PZ');
   </script>
-  <script src="data.js"></script>
   <script type="text/javascript">
     document.addEventListener("DOMContentLoaded", function () {
-      document.getElementById('test').textContent = JSON_DATA["text"]
+      const url = "https://script.google.com/macros/s/AKfycbzJRfhsVBb7sJK5swCUAjOcvmqLrl11V94bKqnFo_YLpwTXqT3Jo5dcYYgObidb9WxcHA/exec"
+
+      let request = new XMLHttpRequest();
+      request.open('GET', URL, true); 
+      request.onload = function () {
+        var data = this.response;
+        document.getElementById('test').textContent = data
+      }
+      request.send();
     });
   </script>
   <meta charset="UTF-8">
